@@ -1,108 +1,72 @@
 
-" 構文チェック
+" Syntax check
 syntax enable
-" エンコーディング
+" encoding
 set encoding=UTF-8
 set fileencoding=UTF-8
 set termencoding=UTF-8
-" スクロールする時に下が見えるようにする
+" under scroll
 set scrolloff=2
-" .swapファイルを作らない
+" nmake .swap
 set noswapfile
-" バックアップファイルを作らない
+" nmake backup
 set nowritebackup
-" バックアップをしない
 set nobackup
-" バックスペースで各種消せるようにする
+" backspace Delete
 set backspace=indent,eol,start
-" ビープ音を消す
+" silent heap
 set vb t_vb=
 set novisualbell
-" OSのクリップボードを使う
+" use Clipboard OS
 set clipboard=unnamed,autoselect
-" 右下に表示される行・列の番号を表示する
+" show row and col
 set ruler
-" compatibleオプションをオフにする
+" compatible off
 set nocompatible
-" 移動コマンドを使ったとき、行頭に移動しない
-set nostartofline
-" 対応括弧に<と>のペアを追加
-set matchpairs& matchpairs+=<:>
-" 対応括弧をハイライト表示する
+" highlight on
 set showmatch
-" 対応括弧の表示秒数を3秒にする
+" highlight time
 set matchtime=3
-" ウィンドウの幅より長い行は折り返され、次の行に続けて表示される
-set wrap
-" 入力されているテキストの最大幅を無効にする
-set textwidth=0
-" 不可視文字を表示
+" show Invisible character
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
-" インデントをshiftwidthの倍数に丸める
-set shiftround
-" 補完の際の大文字小文字の区別しない
-set infercase
-" 変更中のファイルでも、保存しないで他のファイルを表示
-set hidden
-" 新しく開く代わりにすでに開いてあるバッファを開く
-set switchbuf=useopen
-" 小文字の検索でも大文字も見つかるようにする
-set ignorecase
-" ただし大文字も含めた検索の場合はその通りに検索する
-set smartcase
-" インクリメンタルサーチを行う
+" incremental search
 set incsearch
-" 検索結果をハイライト表示
+" show highlight word 
 :set hlsearch
-" タブ文字幅
+" Tab width
 set tabstop=4
-" 自動インデントの幅
+" shift width
 set shiftwidth=4
-" タブ入力を複数の空白入力に置き換え
-set expandtab
-" 行頭の余白内で Tab を打ち込むとshiftwidthの数だけインデントする
-set smarttab
-" autoindentと同様だがC構文を認識
-set smartindent
-" カラー設定
+
+" color mapping
 set t_Co=256
 set background=dark
 colorscheme desert
 let g:solarized_termcolors=256
 set listchars=eol:¬,tab:▸\
-" 行番号表示
+" show rows
 set number
-" タイトルをウィンドウ枠に表示
+" show title window
 set title
 set undolevels=300
-" コマンド・検索パターンの履歴
+" command search buffer
 set history=10000
-" IME設定
+" IMEsetting
 set iminsert=0
 set imsearch=0
 set imdisable
-" ステータスライン
+" status line
 set laststatus=2
-" メッセージ表示欄
+" message line width
 set cmdheight=1
-" 置換の時 g オプションをデフォルトで有効にする
-set gdefault
-" カーソルが何行目の何列目に置かれているかを表示する
 set ruler
-" コマンドを画面下に表示させる
+" command bottom screen
 set showcmd
-" タブ補完
-set wildmenu
-set wildmode=list:longest
-" 最後尾まで検索を終えたら次の検索で先頭に移る
-set wrapscan
-" ペースト
+" paste
 set pastetoggle=<F12>
 set clipboard=unnamed,unnamedplus,autoselect
-" ESCキーが押されてからの待ち時間
+" ESC response time
 set timeoutlen=300
-" マウス対応
 set mouse=a
-set ttymouse=xterm2
-" コマンドを画面最下部に表示する
+" Command bottom
 set showcmd
