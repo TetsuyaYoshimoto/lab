@@ -17,7 +17,6 @@ setopt list_packed
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
-
 # history file
 HISTFILE=~/.zsh_history
 # memory history
