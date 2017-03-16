@@ -1,5 +1,5 @@
 
-# egv
+# egv.
 export LANG=ja_JP.UTF-8
 #export PATH=$PATH:/usr/include/c++/4.8/
 export PATH=/usr/local/bin:/usr/bin:$PATH
