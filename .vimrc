@@ -14,6 +14,7 @@ set nowritebackup
 set nobackup
 " backspace Delete
 set backspace=indent,eol,start
+
 " silent heap
 set vb t_vb=
 set novisualbell
