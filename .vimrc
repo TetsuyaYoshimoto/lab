@@ -63,6 +63,7 @@ set cmdheight=1
 set ruler
 " command bottom screen
 set showcmd
+
 " paste
 set pastetoggle=<F12>
 set clipboard=unnamed,unnamedplus,autoselect
