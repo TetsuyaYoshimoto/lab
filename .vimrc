@@ -1,5 +1,4 @@
 
-
 " Syntax check
 syntax enable
 " encoding
