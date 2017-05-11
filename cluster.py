@@ -60,7 +60,6 @@ def main():
     CK.fit(4)
     CK.ans()
     CK.dataplot()
-    CK.dendoplot()
     CK = None
 
 if __name__=="__main__":
