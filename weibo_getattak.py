@@ -2,13 +2,11 @@
 
 import urllib2
 
-
 class SCR:
     def __init__(self):
         self.url = ""
 
-
-    def geturl(self, url):
+    def seturl(self, url):
         self.url = url
 
     def ret(self):
@@ -22,31 +20,19 @@ class SCR:
         fp.close()
         return html
 
-
-def beau(word):
-    reword = ""
-    word = map(str, word.split())
-    for wo in word:
-        reword+=wo
-    return reword
-
-
-def sub(): 
+def main():
     ans = []
+    #make instans name "a"
     a = SCR()
-    a.geturl("http://s.weibo.com/weibo/Japan&b=2&page=1")
+    #"a" instans have self.url. setlurl func effective chainge "a" instans in url value.
+    a.seturl("http://s.weibo.com/weibo/Japan&b=2&page=1")
+    #"a" instans have htmldata. ret func return html on seturl
     html = a.ret()
 
+    #save step
     f = open("test.txt", "w")
     f.write(html)
     f.close()
 
-
-def main():
-    sub()
-
-
 if __name__=="__main__":
     main()
-
-
