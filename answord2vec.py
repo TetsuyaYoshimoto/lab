@@ -7,8 +7,9 @@ import sys
 def main():
     for _ in range(4):
         word = input()
-        print(word)
+        #Your put on model Path
         model = word2vec.Word2Vec.load("../out.model")
+        #Output similer word top 10
         results = model.most_similar(positive=word, topn=int(10))
         
         for result in results:
