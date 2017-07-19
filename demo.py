@@ -14,7 +14,7 @@ class Sharch_data:
 
     def _Set_(self, url):
         self.url = url
-        self.driver = webdriver.Chrome("/mnt/c/Users/yt/Documents/progrum/lab/attack/chromedriver.exe")
+        self.driver = webdriver.Chrome("Your drive full path")
 
     def _fit_(self):
         self.driver.get(self.url)
@@ -30,5 +30,4 @@ def main():
 
 if __name__=="__main__":
     main()
-
 
